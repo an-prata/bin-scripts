@@ -56,8 +56,8 @@ $LS_OUTPUT"
 	echo "$FILES" > "/tmp/system-search/$USER/files"
 fi
 
-SELECTION=$(echo "$FILES
-$DESKTOP_APPS" | fzfmenu.sh)
+SELECTION=$(echo "$DESKTOP_APPS
+$FILES" | fzfmenu.sh)
 
 if [[ "$SELECTION" == *"/"* ]]; then
     xdg-open "$SELECTION"
