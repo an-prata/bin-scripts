@@ -57,7 +57,7 @@ $LS_OUTPUT"
 fi
 
 SELECTION=$(echo "$DESKTOP_APPS
-$FILES" | fzfmenu.sh)
+$FILES" | fzfmenu)
 
 if [[ "$SELECTION" == *"/"* ]]; then
     xdg-open "$SELECTION"
