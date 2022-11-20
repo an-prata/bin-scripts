@@ -2,10 +2,10 @@
 
 if [[ "$1" != "" ]]; then
 	feh --bg-fill "$1"
-	mkdir "/var/set-wallpaper/"
-	rm -r "/var/set-wallpaper/*"
-	cp "$1" "/var/set-wallpaper/wallpaper"
+	mkdir "$HOME/.config/set-wallpaper/"
+	rm -r "$HOME/.config/set-wallpaper/*"
+	cp "$1" "$HOME/.config/set-wallpaper/wallpaper"
 else
-	feh --bg-fill "/var/set-wallpaper/wallpaper"
+	feh --bg-fill "$HOME/.config/set-wallpaper/wallpaper"
 fi
 
