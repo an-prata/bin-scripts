@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+# Produces a cover file "cover.png" from the given
+# audio file, asuming it has attached album art.
+
+ffmpeg -i "$1" -an -vcodec copy cover.png -loglevel quiet
+
