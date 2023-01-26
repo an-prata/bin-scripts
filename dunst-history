@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+dunstctl history | ./notification-list.py | less -R
+
